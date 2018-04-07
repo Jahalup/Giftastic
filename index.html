@@ -11,19 +11,56 @@
 </head>
 <body>
     <div class="container">
-        <h1>Disney</h1>
-        <!-- Disney gifs get shown here -->
-        <div id="disgifdiv"></div>
-         <!-- Rendered Buttons will get Dumped Here  -->
-    <div id="buttons-view"></div>
+        <!-- Title Row -->
+            <div class="row">
+                    <div class="col">
+                        <h1>Storm the Castle!</h1>
+                    </div>
+                </div>
+                <!-- Instructions Row -->
+        <div class="row">   
+                <div class="col">
+                    <div class="instructions">
+                        <p>Choose a villain... <br>or even better, <br><span id="Pick">summon your own!</span>
+                        </p>
+                        <div id="buttons-view"></div>
+                        <form id="input-form">
+                                <label for="disney-input">Add your favorite Disney villain</label>
+                                <input type="text" id="disney-input">
+                                <br>
+                           <!-- Button triggers new movie to be added -->
+                           <input id="add-disney" type="submit" value="summon new character">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-4" id="disgifdiv">
+                        </div>
+                        
+           
+                    <div class="col-4" id="image1">
+                        <img src="assets/images/castle.jpg">
+                        </div>
+                        
+                    <div class="col-4" id="disgifdiv2">
 
-    <form id="input-form">
-        <label for="disney-input">Add your favorite Disney character</label>
+                    </div>
+                    </div>
+
+       
+        <!-- Disney gifs get shown here -->
+        <!-- <div id="disgifdiv"></div> -->
+         <!-- Rendered Buttons will get Dumped Here  -->
+    <!-- <div id="buttons-view"></div> -->
+
+    <!-- <form id="input-form">
+        <label for="disney-input">Add your favorite Disney villain</label>
         <input type="text" id="disney-input">
         <br>
-   <!-- Button triggers new movie to be added -->
-   <input id="add-disney" type="submit" value="summon new character">
-</form>
+   <!-Button triggers new movie to be added -->
+   <!-- <input id="add-disney" type="submit" value="summon new character">
+</form> --> 
 
     
 

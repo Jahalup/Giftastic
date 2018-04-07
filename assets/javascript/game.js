@@ -15,7 +15,8 @@ $.ajax({
         console.log(response);
         
         var disresults = response.data
-        for (i=0; i<disresults.length; i++) {
+        for (i=0; i<6; i++) {
+            if (i<3) {
             var gifDiv = $("<div class='item'>");
             var disimage = $("<img class=gif>");
             disimage.attr("src", disresults[i].images.original_still.url);           
@@ -23,10 +24,20 @@ $.ajax({
             disimage.attr("data-animate", disresults[i].images.original.url);
             disimage.attr("data-state", "still");
             gifDiv.append(disimage);
-            $("#disgifdiv").prepend(gifDiv);
-            
-           
-        };
+            $("#disgifdiv").prepend(gifDiv);}
+        else
+     {       
+        var gifDiv2 = $("<div class='item'>");
+        var disimage = $("<img class=gif>");
+        disimage.attr("src", disresults[i].images.original_still.url);           
+        disimage.attr("data-still", disresults[i].images.original_still.url);
+        disimage.attr("data-animate", disresults[i].images.original.url);
+        disimage.attr("data-state", "still");
+        gifDiv2.append(disimage);
+        $("#disgifdiv2").prepend(gifDiv2);
+        }};
+
+
         $(".gif").on("click", function() {
             var state = $(this).attr("data-state");
       if (state == "still") {
