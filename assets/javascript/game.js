@@ -17,13 +17,37 @@ $.ajax({
         var disresults = response.data
         for (i=0; i<disresults.length; i++) {
             var gifDiv = $("<div class='item'>");
-            var disimage = $("<img>");
-            disimage.attr("src", disresults[i].images.original_still.url);
+            var disimage = $("<img class=gif>");
+            disimage.attr("src", disresults[i].images.original_still.url);           
+            disimage.attr("data-still", disresults[i].images.original_still.url);
+            disimage.attr("data-animate", disresults[i].images.original.url);
+            disimage.attr("data-state", "still");
             gifDiv.append(disimage);
             $("#disgifdiv").prepend(gifDiv);
+            
+           
         };
+        $(".gif").on("click", function() {
+            var state = $(this).attr("data-state");
+      if (state == "still") {
+     $(this).attr("src", $(this).attr("data-animate"));
+     $(this).attr("data-state", "animate");
+      }
+     else
+     {
+       $(this).attr("src", $(this).attr("data-still"));
+       $(this).attr("data-state", "still");
+        }});
+       
     });
 };
+
+
+
+
+
+
+
 
     function renderbuttons() {
         $("#buttons-view").empty();
@@ -44,3 +68,14 @@ $.ajax({
 
       $(document).on("click", ".movie-btn", displayDisneyCharacter);
       renderbuttons();
+
+
+
+
+
+
+
+
+
+
+
