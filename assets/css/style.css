@@ -1,3 +1,5 @@
+
+/* Google font and overall bckgrnd color */
 body {
   
     background-color: black;
@@ -6,11 +8,13 @@ body {
     text-align: center;
 
 }
+/* Submit button */
 .movie-btn2 {
     background-color: limegreen;
     border-radius: 5px;
     color: black;
 }
+/* Title/instructions */
 h1 {
     font-size: 75px;
     color: limegreen;
@@ -22,8 +26,25 @@ h1 {
     color: limegreen;
     font-size: 30px;
 }
+
+/* Character buttons */
 .movie-btn {
     background-color: limegreen;
     border-radius: 5px;
     color: black;
+}
+
+/* Ratings */
+.rating {
+    color: limegreen;
+    font-size: 15px;
+}
+
+/* Push castle image in front */
+#image1 {
+    z-index: 100;
+}
+
+#castle{
+    border-radius: 40px;
 }

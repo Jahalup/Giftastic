@@ -11,64 +11,47 @@
     
 </head>
 <body>
+<!-- Container for Bootstrap -->
     <div class="container">
-        <!-- Title Row -->
-            <div class="row">
-                    <div class="col">
-                        <h1>Calling All Villains!</h1>
-                    </div>
-                </div>
+<!-- Title Row -->
+        <div class="row">
+            <div class="col">
+                <h1>Calling All Villains!</h1>
+            </div>
+        </div>
                 <!-- Instructions Row -->
         <div class="row">   
-                <div class="col">
-                    <div class="instructions">
-                        <p>Choose a villain... </p>
-                        <div id="buttons-view"></div>
-                        <br><p>or even better, <span id="pick">summon your own!</span>
-                        </p>
-                       
-                        <form id="input-form">
-                                <label for="disney-input">Add your favorite Disney villain</label>
-                                <input type="text" id="disney-input">
-                                <br>
-                           <!-- Button triggers new movie to be added -->
-                           <input id="add-disney" type="submit" value="summon new character" class="movie-btn2">
-                        </form>
-                    </div>
+            <div class="col">
+                <div class="instructions">
+                    <p>Choose a villain... </p>
+                <div id="buttons-view">                   
+                </div>
+                <br>
+                <p>or even better, <span id="pick">summon your own!</span></p>    
+                    <form id="input-form">
+                        <label for="disney-input">Add your favorite Disney villain</label>
+                        <input type="text" id="disney-input">
+                        <br>
+<!-- Button triggers new movie to be added -->
+                        <input id="add-disney" type="submit" value="summon new character" class="movie-btn2">
+                    </form>
                 </div>
             </div>
-            <div class="row">
-                    <div class="col-4" id="disgifdiv">
-                        </div>
+        </div>
+
+<!-- Section for results and image -->
+
+        <div class="row">
+            <div class="col-4" id="disgifdiv">
+            </div>
+                                  
+            <div class="col-4" id="image1">
+                <img id="castle" src="assets/images/castle.jpg">
+            </div>
                         
-           
-                    <div class="col-4" id="image1">
-                        <img src="assets/images/castle.jpg">
-                        </div>
-                        
-                    <div class="col-4" id="disgifdiv2">
-
-                    </div>
-                    </div>
-
-       
-        <!-- Disney gifs get shown here -->
-        <!-- <div id="disgifdiv"></div> -->
-         <!-- Rendered Buttons will get Dumped Here  -->
-    <!-- <div id="buttons-view"></div> -->
-
-    <!-- <form id="input-form">
-        <label for="disney-input">Add your favorite Disney villain</label>
-        <input type="text" id="disney-input">
-        <br>
-   <!-Button triggers new movie to be added -->
-   <!-- <input id="add-disney" type="submit" value="summon new character">
-</form> --> 
-
-    
-
-
-
+            <div class="col-4" id="disgifdiv2">
+            </div>
+         </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/javascript/game.js"></script> 
