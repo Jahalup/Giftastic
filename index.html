@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
 </head>
@@ -14,22 +15,24 @@
         <!-- Title Row -->
             <div class="row">
                     <div class="col">
-                        <h1>Storm the Castle!</h1>
+                        <h1>Calling All Villains!</h1>
                     </div>
                 </div>
                 <!-- Instructions Row -->
         <div class="row">   
                 <div class="col">
                     <div class="instructions">
-                        <p>Choose a villain... <br>or even better, <br><span id="Pick">summon your own!</span>
-                        </p>
+                        <p>Choose a villain... </p>
                         <div id="buttons-view"></div>
+                        <br><p>or even better, <span id="pick">summon your own!</span>
+                        </p>
+                       
                         <form id="input-form">
                                 <label for="disney-input">Add your favorite Disney villain</label>
                                 <input type="text" id="disney-input">
                                 <br>
                            <!-- Button triggers new movie to be added -->
-                           <input id="add-disney" type="submit" value="summon new character">
+                           <input id="add-disney" type="submit" value="summon new character" class="movie-btn2">
                         </form>
                     </div>
                 </div>

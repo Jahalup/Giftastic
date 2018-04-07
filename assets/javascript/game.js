@@ -6,7 +6,7 @@ var movies = ["Cinderella", "Ariel", "Ursula", "Rapunzel", "Moana", "Belle", "Mi
 function displayDisneyCharacter() {
     var disneychoice = $(this).attr("data-name");
     // var movie = $(this).attr("data-name");
-var getDis = "https://api.giphy.com/v1/gifs/search?api_key=xo2pGkkJnrWklqW1H9jNsX02IcWREuIV&q=" + disneychoice + "&limit=25&offset=0&rating=G&lang=en";
+var getDis = "https://api.giphy.com/v1/gifs/search?api_key=xo2pGkkJnrWklqW1H9jNsX02IcWREuIV&q=" + disneychoice + "&limit=6&offset=0&rating=G&lang=en";
 
 $.ajax({
     url: getDis,
@@ -58,7 +58,7 @@ $.ajax({
 
 
 
-
+// Function to create the buttons
 
     function renderbuttons() {
         $("#buttons-view").empty();
@@ -67,14 +67,24 @@ $.ajax({
             a.addClass("movie-btn");
             a.attr("data-name", movies[i]);
             a.text(movies[i]);
-            $("#buttons-view").append(a);}
+            $("#buttons-view").append(a);
+           
+        }
     }
+
+
+        
 
     $("#add-disney").on("click", function(event) {
         event.preventDefault();
+        
         var disneychoice = $("#disney-input").val().trim();
+       
         movies.push(disneychoice);
+        
+        $("#input-form")[0].reset();
         renderbuttons();
+       
       });
 
       $(document).on("click", ".movie-btn", displayDisneyCharacter);
