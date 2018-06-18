@@ -1,7 +1,6 @@
 # Giftastic
 # Disney Villains
-This project was created by Jaime Halupka as a requirement for homework during University of Central Florida's Coding
-Bootcamp. 
+
 
 ![In Action](/assets/images/screenshot.png "In Action")
 
