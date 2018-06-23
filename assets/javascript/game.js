@@ -30,7 +30,7 @@ $.ajax({
             disimage.attr("data-still", disresults[i].images.original_still.url);
             disimage.attr("data-animate", disresults[i].images.original.url);
             disimage.attr("data-state", "still");
-            var p = $("<p class=rating>").text("Rating: " + disresults[i].rating);
+            var p = $("<p class='rating'>").text("Rating: " + disresults[i].rating);
             gifDiv.append(disimage);
             $("#disgifdiv").prepend(gifDiv);
             gifDiv.append(p);}
@@ -38,7 +38,7 @@ $.ajax({
 // Code for displaying gifs right of image            
         else {       
             var gifDiv2 = $("<div class='item'>");
-            var disimage = $("<img class=gif>");
+            var disimage = $("<img class='gif'>");
             disimage.attr("src", disresults[i].images.original_still.url);           
             disimage.attr("data-still", disresults[i].images.original_still.url);
             disimage.attr("data-animate", disresults[i].images.original.url);
